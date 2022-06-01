@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import logo from "../assets/logo_sportsee.svg";
+import Icon from "./Icon";
 import "../sass/styles.css";
 
 function Navigation() {
@@ -26,7 +27,17 @@ function Navigation() {
           </Link>
         </nav>
       </div>
-      <div className="sidebar">SIDEBAR</div>
+      <div className="sidebar">
+          <nav className="sidebar__buttons">
+            <Icon/>
+            <Icon/>
+            <Icon/>
+            <Icon/>
+          </nav>
+          <div className="sidebar__copyright">
+              <p className="sidebar__copyright__text">Copyright, SportSee 2022</p>
+          </div>
+      </div>
     </div>
   );
 }

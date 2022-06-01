@@ -36,8 +36,33 @@
     
     
   .sidebar {
+   
     position: fixed;
-    background-color: blue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: black;
+    color: white;
     width: 117px;
-    height: 100%;
+    height: 100vh;
+
+    &__copyright {
+      
+      writing-mode: vertical-lr;
+      width: 100%;
+      height: 138px;
+
+      &__text {
+        transform: rotate(180deg);
+      }
+    
+    }
+
+    &__buttons {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      height: 316px;
+    }
   }

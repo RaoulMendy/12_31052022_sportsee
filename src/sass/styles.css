@@ -15,6 +15,10 @@ a {
   font-size: 24px;
 }
 
+.sidebar__copyright {
+  font-size: 12px;
+}
+
 .wrapper {
   position: relative;
 }
@@ -58,16 +62,61 @@ a {
 
 .sidebar {
   position: fixed;
-  background-color: blue;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: black;
+  color: white;
   width: 117px;
-  height: 100%;
+  height: 100vh;
+}
+
+.sidebar__copyright {
+  -webkit-writing-mode: vertical-lr;
+      -ms-writing-mode: tb-lr;
+          writing-mode: vertical-lr;
+  width: 100%;
+  height: 138px;
+}
+
+.sidebar__copyright__text {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.sidebar__buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 316px;
 }
 
 .dashboard {
-  color: red;
   margin-left: 117px;
   padding: 90px;
   height: 100%;
-  border: 3px solid red;
+}
+
+.icon {
+  background-color: white;
+  width: 64px;
+  height: 64px;
 }
 /*# sourceMappingURL=styles.css.map */
