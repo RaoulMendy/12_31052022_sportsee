@@ -1,1 +1,73 @@
-/* No CSS *//*# sourceMappingURL=styles.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
+body {
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  text-decoration: none;
+  color: unset;
+  font-weight: unset;
+  font-size: 24px;
+}
+
+.wrapper {
+  position: relative;
+}
+
+.header {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 200px 1fr;
+      grid-template-columns: 200px 1fr;
+  height: 91px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  background-color: black;
+  color: white;
+}
+
+.header__logo {
+  width: 100%;
+}
+
+.header__logo__img {
+  width: 178px;
+  height: 100%;
+}
+
+.header__nav {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  -webkit-column-gap: 15px;
+          column-gap: 15px;
+  text-align: center;
+}
+
+.header__nav a:hover {
+  text-decoration: underline;
+}
+
+.sidebar {
+  position: fixed;
+  background-color: blue;
+  width: 117px;
+  height: 100%;
+}
+
+.dashboard {
+  color: red;
+  margin-left: 117px;
+  padding: 90px;
+  height: 100%;
+  border: 3px solid red;
+}
+/*# sourceMappingURL=styles.css.map */
