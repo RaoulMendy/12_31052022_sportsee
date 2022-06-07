@@ -15,6 +15,10 @@ a {
   font-size: 24px;
 }
 
+h1, p {
+  margin: 0;
+}
+
 .sidebar__copyright {
   font-size: 12px;
 }
@@ -69,26 +73,31 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   background-color: black;
   color: white;
   width: 117px;
-  height: 100vh;
+  height: 100%;
 }
 
 .sidebar__copyright {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-writing-mode: vertical-lr;
       -ms-writing-mode: tb-lr;
           writing-mode: vertical-lr;
-  width: 100%;
-  height: 138px;
 }
 
 .sidebar__copyright__text {
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
+  white-space: nowrap;
 }
 
 .sidebar__buttons {

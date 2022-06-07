@@ -33,6 +33,7 @@ function Navigation() {
             <Icon type="swim"/>
             <Icon type="cycle"/>
             <Icon type="weight"/>
+
        
           </nav>
           <div className="sidebar__copyright">
