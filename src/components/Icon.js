@@ -1,10 +1,18 @@
 import React from "react";
 import "../sass/styles.css"
+import Mock from "../assets/swim-icon.svg"
 
 
-function Icon() {
+function Icon({type}) {
+
+    const src = type.toString()
+    const source = `../assets/${src}-icon.svg`;
+
+
     return (
-        <div className="icon"></div>
+        <div className="icon">
+            <img src={Mock} alt={`icon__${type}`}/>
+        </div>
     )
 }
 

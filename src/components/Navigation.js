@@ -29,10 +29,11 @@ function Navigation() {
       </div>
       <div className="sidebar">
           <nav className="sidebar__buttons">
-            <Icon/>
-            <Icon/>
-            <Icon/>
-            <Icon/>
+            <Icon type="yoga"/>
+            <Icon type="swim"/>
+            <Icon type="cycle"/>
+            <Icon type="weight"/>
+       
           </nav>
           <div className="sidebar__copyright">
               <p className="sidebar__copyright__text">Copyright, SportSee 2022</p>
