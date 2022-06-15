@@ -1,9 +1,11 @@
 import React from "react";
 import "../sass/styles.css";
 
-function Dashboard() {
+function Dashboard({id}) {
+
+
   return <div className="dashboard">
-    <h1>Bonjour Tom</h1>
+    <h1>Bonjour <span className="user">{id}</span></h1>
     <p>Avez-vous atteint votre objectif?</p>
   </div>;
 }

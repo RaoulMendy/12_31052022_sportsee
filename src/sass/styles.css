@@ -123,9 +123,14 @@ h1, p {
   height: 100%;
 }
 
+.user {
+  color: #ff0000;
+}
+
 .icon {
   background-color: white;
   width: 64px;
   height: 64px;
+  cursor: pointer;
 }
 /*# sourceMappingURL=styles.css.map */
