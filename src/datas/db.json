@@ -1,0 +1,655 @@
+[
+  {
+"USER_MAIN_DATA": [{
+    "id": 1,
+    "userInfos": {
+      "firstname": "Rahal",
+      "lastname": "Eltone"
+    },
+    "todayScore": 0.83,
+    "KeyData": {
+      "calorieCount": 2084,
+      "proteinCount": 121,
+      "carbohydratesCount": 124,
+      "lipidCount": 85
+    }
+  }, {
+    "id": 2,
+    "userInfos": {
+      "firstname": "Rodi",
+      "lastname": "Kirckman"
+    },
+    "todayScore": 0.42,
+    "KeyData": {
+      "calorieCount": 1842,
+      "proteinCount": 120,
+      "carbohydratesCount": 123,
+      "lipidCount": 45
+    }
+  }, {
+    "id": 3,
+    "userInfos": {
+      "firstname": "Rorie",
+      "lastname": "Axworthy"
+    },
+    "todayScore": 0.84,
+    "KeyData": {
+      "calorieCount": 2338,
+      "proteinCount": 109,
+      "carbohydratesCount": 152,
+      "lipidCount": 22
+    }
+  }, {
+    "id": 4,
+    "userInfos": {
+      "firstname": "Gracia",
+      "lastname": "Wyne"
+    },
+    "todayScore": 0.42,
+    "KeyData": {
+      "calorieCount": 2425,
+      "proteinCount": 110,
+      "carbohydratesCount": 176,
+      "lipidCount": 31
+    }
+  }, {
+    "id": 5,
+    "userInfos": {
+      "firstname": "Quint",
+      "lastname": "Brolan"
+    },
+    "todayScore": 0.83,
+    "KeyData": {
+      "calorieCount": 1941,
+      "proteinCount": 135,
+      "carbohydratesCount": 172,
+      "lipidCount": 69
+    }
+  }]
+
+  },
+
+  {
+  "USER_ACTIVITY": [{
+    "userId": 1,
+    "sessions": [
+      {
+        "day": "2022-05-05",
+        "kilogram": 70,
+        "calories": 353
+      },
+      {
+        "day": "2021-07-18",
+        "kilogram": 75,
+        "calories": 227
+      },
+      {
+        "day": "2021-07-08",
+        "kilogram": 72,
+        "calories": 196
+      },
+      {
+        "day": "2021-07-11",
+        "kilogram": 74,
+        "calories": 260
+      },
+      {
+        "day": "2021-08-31",
+        "kilogram": 72,
+        "calories": 246
+      },
+      {
+        "day": "2022-01-08",
+        "kilogram": 74,
+        "calories": 214
+      },
+      {
+        "day": "2021-09-04",
+        "kilogram": 71,
+        "calories": 258
+      }
+    ]
+  }, {
+    "userId": 2,
+    "sessions": [
+      {
+        "day": "2021-10-30",
+        "kilogram": 73,
+        "calories": 241
+      },
+      {
+        "day": "2021-08-13",
+        "kilogram": 70,
+        "calories": 230
+      },
+      {
+        "day": "2021-11-15",
+        "kilogram": 71,
+        "calories": 157
+      },
+      {
+        "day": "2022-03-19",
+        "kilogram": 71,
+        "calories": 171
+      },
+      {
+        "day": "2021-11-26",
+        "kilogram": 75,
+        "calories": 400
+      },
+      {
+        "day": "2022-05-24",
+        "kilogram": 70,
+        "calories": 206
+      },
+      {
+        "day": "2022-02-15",
+        "kilogram": 71,
+        "calories": 285
+      }
+    ]
+  }, {
+    "userId": 3,
+    "sessions": [
+      {
+        "day": "2022-01-21",
+        "kilogram": 74,
+        "calories": 348
+      },
+      {
+        "day": "2021-06-25",
+        "kilogram": 72,
+        "calories": 295
+      },
+      {
+        "day": "2022-03-09",
+        "kilogram": 72,
+        "calories": 229
+      },
+      {
+        "day": "2022-01-12",
+        "kilogram": 73,
+        "calories": 193
+      },
+      {
+        "day": "2022-04-24",
+        "kilogram": 71,
+        "calories": 356
+      },
+      {
+        "day": "2022-03-26",
+        "kilogram": 71,
+        "calories": 186
+      },
+      {
+        "day": "2021-09-01",
+        "kilogram": 73,
+        "calories": 326
+      }
+    ]
+  }, {
+    "userId": 4,
+    "sessions": [
+      {
+        "day": "2022-01-16",
+        "kilogram": 70,
+        "calories": 152
+      },
+      {
+        "day": "2021-07-02",
+        "kilogram": 72,
+        "calories": 287
+      },
+      {
+        "day": "2021-09-16",
+        "kilogram": 75,
+        "calories": 181
+      },
+      {
+        "day": "2022-04-27",
+        "kilogram": 71,
+        "calories": 397
+      },
+      {
+        "day": "2021-06-19",
+        "kilogram": 71,
+        "calories": 329
+      },
+      {
+        "day": "2021-09-03",
+        "kilogram": 72,
+        "calories": 179
+      },
+      {
+        "day": "2021-09-08",
+        "kilogram": 71,
+        "calories": 345
+      }
+    ]
+  }, {
+    "userId": 5,
+    "sessions": [
+      {
+        "day": "2021-06-15",
+        "kilogram": 70,
+        "calories": 394
+      },
+      {
+        "day": "2021-12-25",
+        "kilogram": 75,
+        "calories": 154
+      },
+      {
+        "day": "2022-02-23",
+        "kilogram": 75,
+        "calories": 231
+      },
+      {
+        "day": "2021-09-05",
+        "kilogram": 72,
+        "calories": 235
+      },
+      {
+        "day": "2021-09-10",
+        "kilogram": 72,
+        "calories": 350
+      },
+      {
+        "day": "2021-09-08",
+        "kilogram": 75,
+        "calories": 316
+      },
+      {
+        "day": "2021-08-25",
+        "kilogram": 70,
+        "calories": 388
+      }
+    ]
+  }]
+  },
+
+  {
+  "USER_AVERAGE_SESSIONS": [{
+    "userId": 1,
+    "sessions": [
+      {
+        "day": "2022-05-05",
+        "kilogram": 70,
+        "calories": 353
+      },
+      {
+        "day": "2021-07-18",
+        "kilogram": 75,
+        "calories": 227
+      },
+      {
+        "day": "2021-07-08",
+        "kilogram": 72,
+        "calories": 196
+      },
+      {
+        "day": "2021-07-11",
+        "kilogram": 74,
+        "calories": 260
+      },
+      {
+        "day": "2021-08-31",
+        "kilogram": 72,
+        "calories": 246
+      },
+      {
+        "day": "2022-01-08",
+        "kilogram": 74,
+        "calories": 214
+      },
+      {
+        "day": "2021-09-04",
+        "kilogram": 71,
+        "calories": 258
+      }
+    ]
+  }, {
+    "userId": 2,
+    "sessions": [
+      {
+        "day": "2021-10-30",
+        "kilogram": 73,
+        "calories": 241
+      },
+      {
+        "day": "2021-08-13",
+        "kilogram": 70,
+        "calories": 230
+      },
+      {
+        "day": "2021-11-15",
+        "kilogram": 71,
+        "calories": 157
+      },
+      {
+        "day": "2022-03-19",
+        "kilogram": 71,
+        "calories": 171
+      },
+      {
+        "day": "2021-11-26",
+        "kilogram": 75,
+        "calories": 400
+      },
+      {
+        "day": "2022-05-24",
+        "kilogram": 70,
+        "calories": 206
+      },
+      {
+        "day": "2022-02-15",
+        "kilogram": 71,
+        "calories": 285
+      }
+    ]
+  }, {
+    "userId": 3,
+    "sessions": [
+      {
+        "day": "2022-01-21",
+        "kilogram": 74,
+        "calories": 348
+      },
+      {
+        "day": "2021-06-25",
+        "kilogram": 72,
+        "calories": 295
+      },
+      {
+        "day": "2022-03-09",
+        "kilogram": 72,
+        "calories": 229
+      },
+      {
+        "day": "2022-01-12",
+        "kilogram": 73,
+        "calories": 193
+      },
+      {
+        "day": "2022-04-24",
+        "kilogram": 71,
+        "calories": 356
+      },
+      {
+        "day": "2022-03-26",
+        "kilogram": 71,
+        "calories": 186
+      },
+      {
+        "day": "2021-09-01",
+        "kilogram": 73,
+        "calories": 326
+      }
+    ]
+  }, {
+    "userId": 4,
+    "sessions": [
+      {
+        "day": "2022-01-16",
+        "kilogram": 70,
+        "calories": 152
+      },
+      {
+        "day": "2021-07-02",
+        "kilogram": 72,
+        "calories": 287
+      },
+      {
+        "day": "2021-09-16",
+        "kilogram": 75,
+        "calories": 181
+      },
+      {
+        "day": "2022-04-27",
+        "kilogram": 71,
+        "calories": 397
+      },
+      {
+        "day": "2021-06-19",
+        "kilogram": 71,
+        "calories": 329
+      },
+      {
+        "day": "2021-09-03",
+        "kilogram": 72,
+        "calories": 179
+      },
+      {
+        "day": "2021-09-08",
+        "kilogram": 71,
+        "calories": 345
+      }
+    ]
+  }, {
+    "userId": 5,
+    "sessions": [
+      {
+        "day": "2021-06-15",
+        "kilogram": 70,
+        "calories": 394
+      },
+      {
+        "day": "2021-12-25",
+        "kilogram": 75,
+        "calories": 154
+      },
+      {
+        "day": "2022-02-23",
+        "kilogram": 75,
+        "calories": 231
+      },
+      {
+        "day": "2021-09-05",
+        "kilogram": 72,
+        "calories": 235
+      },
+      {
+        "day": "2021-09-10",
+        "kilogram": 72,
+        "calories": 350
+      },
+      {
+        "day": "2021-09-08",
+        "kilogram": 75,
+        "calories": 316
+      },
+      {
+        "day": "2021-08-25",
+        "kilogram": 70,
+        "calories": 388
+      }
+    ]
+  }]
+  },
+  
+  {
+  "USER_PERFORMANCE":[{
+    "userId": 1,
+    "kind": {
+      "1": "cardio",
+      "2": "energy",
+      "3": "endurance",
+      "4": "strength",
+      "5": "speed",
+      "6": "intensity"
+    },
+    "data": [
+      {
+        "value": 155,
+        "kind": 1
+      },
+      {
+        "value": 174,
+        "kind": 2
+      },
+      {
+        "value": 145,
+        "kind": 3
+      },
+      {
+        "value": 139,
+        "kind": 4
+      },
+      {
+        "value": 177,
+        "kind": 5
+      },
+      {
+        "value": 190,
+        "kind": 6
+      }
+    ]
+  }, {
+    "userId": 2,
+    "kind": {
+      "1": "cardio",
+      "2": "energy",
+      "3": "endurance",
+      "4": "strength",
+      "5": "speed",
+      "6": "intensity"
+    },
+    "data": [
+      {
+        "value": 131,
+        "kind": 1
+      },
+      {
+        "value": 80,
+        "kind": 2
+      },
+      {
+        "value": 89,
+        "kind": 3
+      },
+      {
+        "value": 200,
+        "kind": 4
+      },
+      {
+        "value": 149,
+        "kind": 5
+      },
+      {
+        "value": 52,
+        "kind": 6
+      }
+    ]
+  }, {
+    "userId": 3,
+    "kind": {
+      "1": "cardio",
+      "2": "energy",
+      "3": "endurance",
+      "4": "strength",
+      "5": "speed",
+      "6": "intensity"
+    },
+    "data": [
+      {
+        "value": 148,
+        "kind": 1
+      },
+      {
+        "value": 178,
+        "kind": 2
+      },
+      {
+        "value": 174,
+        "kind": 3
+      },
+      {
+        "value": 125,
+        "kind": 4
+      },
+      {
+        "value": 67,
+        "kind": 5
+      },
+      {
+        "value": 135,
+        "kind": 6
+      }
+    ]
+  }, {
+    "userId": 4,
+    "kind": {
+      "1": "cardio",
+      "2": "energy",
+      "3": "endurance",
+      "4": "strength",
+      "5": "speed",
+      "6": "intensity"
+    },
+    "data": [
+      {
+        "value": 116,
+        "kind": 1
+      },
+      {
+        "value": 190,
+        "kind": 2
+      },
+      {
+        "value": 108,
+        "kind": 3
+      },
+      {
+        "value": 189,
+        "kind": 4
+      },
+      {
+        "value": 83,
+        "kind": 5
+      },
+      {
+        "value": 170,
+        "kind": 6
+      }
+    ]
+  }, {
+    "userId": 5,
+    "kind": {
+      "1": "cardio",
+      "2": "energy",
+      "3": "endurance",
+      "4": "strength",
+      "5": "speed",
+      "6": "intensity"
+    },
+    "data": [
+      {
+        "value": 94,
+        "kind": 1
+      },
+      {
+        "value": 140,
+        "kind": 2
+      },
+      {
+        "value": 181,
+        "kind": 3
+      },
+      {
+        "value": 129,
+        "kind": 4
+      },
+      {
+        "value": 97,
+        "kind": 5
+      },
+      {
+        "value": 121,
+        "kind": 6
+      }
+    ]
+  }]
+  
+  }
+]
+
