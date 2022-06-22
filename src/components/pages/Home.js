@@ -1,22 +1,22 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-import Dashboard from "../Dashboard";
-import data from "../../datas/db.json";
-import { useParams } from "react-router-dom";
+import { USER_MAIN_DATA } from "../../datas/zMockedData";
+
+const data = USER_MAIN_DATA;
+console.log(data);
 
 function Home() {
-  const { id } = useParams();
-  const [data, setData] = useState([])
-
-
-  // Le useEffect se joue lorsque le composant est monté
-  useEffect(() => {
-    axios.get(data).then((res) => console.log(res.data));
-  }, []);
-
   return (
-    <div className="App">
-      <Dashboard id={id} />
+    <div className="dashboard">
+      <h1>Projet N°12 - Sportsee</h1>
+      <p>Veuillez cliquer sur le profil à suivre</p>
+      <ul>
+        {data.map((user) => (
+          <li
+            key={user.id}
+          >{`Utilisateur #${user.id} - ${user.userInfos.firstname} ${user.userInfos.lastname}`}</li>
+        ))}
+      </ul>
     </div>
   );
 }

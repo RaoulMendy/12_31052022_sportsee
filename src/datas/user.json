@@ -1,0 +1,66 @@
+[{
+    "id": 1,
+    "userInfos": {
+      "firstname": "Hendrik",
+      "lastname": "Sapseed"
+    },
+    "todayScore": 0.06,
+    "KeyData": {
+      "calorieCount": 2366,
+      "proteinCount": 114,
+      "carbohydratesCount": 176,
+      "lipidCount": 94
+    }
+  }, {
+    "id": 2,
+    "userInfos": {
+      "firstname": "Kittie",
+      "lastname": "Judd"
+    },
+    "todayScore": 0.21,
+    "KeyData": {
+      "calorieCount": 2669,
+      "proteinCount": 138,
+      "carbohydratesCount": 127,
+      "lipidCount": 74
+    }
+  }, {
+    "id": 3,
+    "userInfos": {
+      "firstname": "Janene",
+      "lastname": "Livesey"
+    },
+    "todayScore": 0.18,
+    "KeyData": {
+      "calorieCount": 2129,
+      "proteinCount": 122,
+      "carbohydratesCount": 115,
+      "lipidCount": 68
+    }
+  }, {
+    "id": 4,
+    "userInfos": {
+      "firstname": "Aubree",
+      "lastname": "Abramov"
+    },
+    "todayScore": 0.82,
+    "KeyData": {
+      "calorieCount": 2573,
+      "proteinCount": 103,
+      "carbohydratesCount": 102,
+      "lipidCount": 23
+    }
+  }, {
+    "id": 5,
+    "userInfos": {
+      "firstname": "Kristian",
+      "lastname": "Quinn"
+    },
+    "todayScore": 0.3,
+    "KeyData": {
+      "calorieCount": 2462,
+      "proteinCount": 138,
+      "carbohydratesCount": 107,
+      "lipidCount": 61
+    }
+  }]

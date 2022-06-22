@@ -1,7 +1,8 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import App from "./components/pages/Home";
+import Home from "./components/pages/Home";
+import User from "./components/pages/User";
 import Navigation from "./components/Navigation";
 
 
@@ -11,7 +12,8 @@ root.render(
     <Router>
     <Navigation />
       <Routes>
-        <Route path="/user/:id" element={<App />}></Route>
+        <Route path="/" element={<Home />}></Route>
+        <Route path="/user/:id" element={<User />}></Route>
       </Routes>
     </Router>
   </React.StrictMode>
