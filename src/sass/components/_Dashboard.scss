@@ -1,5 +1,4 @@
 .dashboard {
-
     margin-left: 117px;
     padding: 90px;
     height: 100%;
@@ -9,3 +8,71 @@
 .user {
     color: $red;
 }
+
+.container {
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    column-gap: 30px;
+    height: 600px;
+    
+}
+
+.container-graph {
+    
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 30px;
+    row-gap: 30px;
+}
+
+.graph1 {
+    grid-area: 1 / 1 / 2 / 4;
+    background-color: $grey1;
+
+}
+.graph2 {
+    grid-area:  2 / 1 / 3 / 2;
+    background-color: $red;
+
+    // background: linear-gradient(90deg, rgba(219, 84, 5, 0.8), rgba(250, 205, 59, 0.863));
+    // background: linear-gradient(90deg, #ff0000 72%, rgba(255, 0, 0, 0.3) 28%);
+}
+.graph3 {
+    grid-area: 2 / 2 / 3 / 3;
+    background-color: $grey3;
+    width: 256px;
+    height: 256px;
+
+}
+.graph4 {
+    grid-area: 2 / 3 / 3 / 4;
+    background-color: $grey1;
+
+}
+
+
+
+.container-nutri {
+    
+    display: grid;
+    align-content: space-between;
+    grid-template-rows: repeat(1fr, 4);
+}
+
+.nutri {
+    display: flex;
+    align-items: center;
+    height: 124px;
+    justify-content: space-around; 
+    background-color: $grey1;
+}
+
+.tooltip {
+    width: 39px;
+    height: 25px;
+    background-color: white;
+    text-align: center;
+
+}
+
