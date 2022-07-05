@@ -29,7 +29,7 @@ const data = [
   },
   {
     name: "V",
-    pv: 5,
+    pv: 2,
   },
   {
     name: "S",
@@ -37,43 +37,51 @@ const data = [
   },
   {
     name: "D",
-    pv: 7,
+    pv: 1,
   },
 ];
 
 function Sessions
 () {
   return (
-    <ResponsiveContainer className="graph2" width="100%" height="100%">
-      <LineChart width={250} height={250} data={data}>
+    <ResponsiveContainer className="dashboard__sessions" width="90%" height="95%">
+      <LineChart data={data}>
         <CartesianGrid horizontal="" vertical="" />
         <XAxis
           dataKey="name"
           padding={{ left: 0, right: 0 }}
           axisLine={false}
           tickLine={false}
-          // interval={0}
-          // tickMargin={3}
-          // tickSize={3}
+          tickMargin={5}
+          tickCount={7}
+          interval={0}
+          tickSize={3}
         />
-        <YAxis hide={true} />
-        <Tooltip content={<Customtooltip />} />
+        <YAxis hide={true}
+        tickCount={7} />
+        <Tooltip 
+        content={<CustomTooltip />} 
+        cursor={{ stroke: 'black', strokeWidth: 80, strokeOpacity: "0.3"  }}
+        />
         {/* <Legend /> */}
         <Line
           type="monotone"
           dataKey="pv"
           stroke="#fff"
+          dot={false}
           activeDot={{ r: 7 }}
         />
       </LineChart>
-    </ResponsiveContainer>
+     </ResponsiveContainer>
   );
-  function Customtooltip({ active, payload, label }) {
+  function CustomTooltip({ active, payload, label }) {
     if (active) {
       return <div className="tooltip">{label}</div>;
     }
   }
 }
+
+
 
 export default Sessions
 ;

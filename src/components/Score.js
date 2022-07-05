@@ -57,9 +57,9 @@ const style = {
   lineHeight: "24px",
 };
 
-function RadialChart() {
+function Score() {
   return (
-    <ResponsiveContainer width="100%" height="100%">
+    <ResponsiveContainer className='graph__score' width="90%" height="95%">
       <RadialBarChart
         cx="50%"
         cy="50%"
@@ -85,4 +85,4 @@ function RadialChart() {
     </ResponsiveContainer>
   );
 }
-export default RadialChart;
+export default Score;

@@ -41,7 +41,7 @@ const data = [
 
 function Performance() {
     return (
-        <ResponsiveContainer className="graph3" width="100%" height="100%">
+        <ResponsiveContainer className="dasboard__performance" width="90%" height="95%">
           <RadarChart cx="50%" cy="50%" outerRadius="80%" data={data}>
             <PolarGrid />
             <PolarAngleAxis dataKey="subject" />
