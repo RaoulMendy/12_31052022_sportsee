@@ -1,12 +1,12 @@
 import React from "react";
-import "../sass/styles.css";
-import Nutriment from "./Nutriment";
-import Activity from "./Activity";
-import Sessions from "./Sessions";
-import Performance from "./Performance";
-import Score from "./Score.js";
+import "../../sass/styles.css"
+import Nutriment from "../Nutriment";
+import Activity from "../Activity";
+import Sessions from "../Sessions";
+import Performance from "../Performance";
+import Score from "../Score.js";
 
-function Dashboard({ id }) {
+function Dashboard({ id, userInfos, TodayScore, KeyData }) {
   return (
     <div className="dashboard">
       <div className="dashboard__header">
@@ -18,11 +18,9 @@ function Dashboard({ id }) {
       <div className="wrapper-dashboard">
         <div className="dashboard__charts">
           <Activity />
-          {/* <div className="graph-bis"> */}
             <Sessions />
             <Performance />
             <Score />
-          {/* </div> */}
         </div>
         <div className="wrapper-macronutrients">
           <Nutriment type="calories" abbrv="Kcal" name="Calories" />

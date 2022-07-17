@@ -1,35 +1,66 @@
 import React, { useState, useEffect } from "react";
-// import axios from "axios";
-import Dashboard from "../Dashboard";
+import "../../sass/styles.css";
 import { useParams } from "react-router-dom";
-import {getUser, getUserActivityById} from "../../service/UserService"
-
+import {
+  getUserById,
+  getUserActivityById,
+  getUserPerformancebyId,
+  getUserScoreById,
+} from "../../service/UserService";
+import Header from "../Header";
+import Activity from "../Activity";
+import Sessions from "../Sessions";
+import Performance from "../Performance";
+import Score from "../Score";
+import Nutriment from "../Nutriment";
 
 function App() {
   const { id } = useParams();
-  // const [data, setData] = useState([]);
-  // const API = `https://my.api.mockaroo.com/user.json?key=7436fef0`
-  // const userData = `https://my.api.mockaroo.com/user/${id}.json?key=7436fef0`;
-  // const localAPI = "../../datas/user.json";
+  const active = parseInt(id);
+  const [datas, setData] = useState({ main: {}, activity: {}, performance: {}, score: {} });
 
   // Le useEffect se joue lorsque le composant est monté
   useEffect(() => {
     async function load() {
-
-      const data = await getUser(12)
-      const dataActivity = await getUserActivityById(12)       
-      console.log(data);
-      console.log(dataActivity);
+      try {
+        const main = await getUserById(active);
+        const activity = await getUserActivityById(active);
+        const performance = await getUserPerformancebyId(active);
+        const score = await getUserScoreById(active);
+        setData({
+          main: main.data,
+          activity: activity.data,
+          performance: performance.data,
+          score: score.data
+        });
+      } catch (error) {
+        console.log(error);
+      }
     }
-    
-    load()
-
-
+    load();
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
+  console.log(datas);
+
   return (
-  <Dashboard id={id}/>
-  
+    <div className="dashboard">
+        <Header userInfos={datas.main.userInfos}/>
+      <div className="wrapper-dashboard">
+        <div className="dashboard__charts">
+          <Activity data={datas.activity.sessions} />
+          <Sessions data={datas.score.sessions} />
+          <Performance data={datas.performance.data} kind={datas.performance.kind} />
+          <Score data={datas.main.todayScore} />
+        </div>
+        <div className="wrapper-macronutrients">
+          {/* <Nutriment data={datas.user.keyData} type="calories" abbrv="Kcal" name="Calories" /> */}
+          <Nutriment type="protein" abbrv="g" name="Proteines" />
+          <Nutriment type="carbs" abbrv="g" name="Glucides" />
+          <Nutriment type="fat" abbrv="g" name="Lipides" />
+        </div>
+      </div>
+    </div>
   );
 }
 

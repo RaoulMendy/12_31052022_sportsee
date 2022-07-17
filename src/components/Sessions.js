@@ -1,78 +1,62 @@
 import {
+  ResponsiveContainer,
   LineChart,
+  CartesianGrid,
+  CartesianAxis,
   Line,
+  Label,
   XAxis,
   YAxis,
-  CartesianGrid,
   Tooltip,
-  // Legend,
-  // ReferenceLine,
-  ResponsiveContainer,
+  Legend,
 } from "recharts";
 
-const data = [
-  {
-    name: "L",
-    pv: 1,
-  },
-  {
-    name: "M",
-    pv: 2,
-  },
-  {
-    name: "M",
-    pv: 3,
-  },
-  {
-    name: "J",
-    pv: 4,
-  },
-  {
-    name: "V",
-    pv: 2,
-  },
-  {
-    name: "S",
-    pv: 6,
-  },
-  {
-    name: "D",
-    pv: 1,
-  },
-];
-
-function Sessions
-() {
+function Sessions({ data }) {
+  const CustomLegend = () => {
+    return <div>Durée moyennes des sessions</div>;
+  };
   return (
-    <ResponsiveContainer className="dashboard__sessions" width="90%" height="95%">
+    <ResponsiveContainer
+      className="dashboard__sessions"
+      width="100%"
+      height="100%"
+    >
       <LineChart data={data}>
         <CartesianGrid horizontal="" vertical="" />
+
         <XAxis
-          dataKey="name"
-          padding={{ left: 0, right: 0 }}
+        
           axisLine={false}
           tickLine={false}
-          tickMargin={5}
-          tickCount={7}
-          interval={0}
-          tickSize={3}
+          // tickCount={7}
+          // tickSize={3}
+        >
+          <Label position="bottom"/>
+        </XAxis>
+
+        <YAxis hide={true} tickCount={7} />
+        <Tooltip
+        // content={<CustomTooltip />}
+        // cursor={{ stroke: "black", strokeWidth: 80, strokeOpacity: "0.3" }}
         />
-        <YAxis hide={true}
-        tickCount={7} />
-        <Tooltip 
-        content={<CustomTooltip />} 
-        cursor={{ stroke: 'black', strokeWidth: 80, strokeOpacity: "0.3"  }}
-        />
-        {/* <Legend /> */}
         <Line
           type="monotone"
-          dataKey="pv"
+          dataKey="sessionLength"
           stroke="#fff"
           dot={false}
           activeDot={{ r: 7 }}
         />
+        <Legend
+          content={<CustomLegend />}
+          wrapperStyle={{
+            bottom: 160,
+            lineHeight: "10px",
+            justifyContent: "space-between",
+            width: "100%",
+          }}
+        />
       </LineChart>
-     </ResponsiveContainer>
+    </ResponsiveContainer>
   );
   function CustomTooltip({ active, payload, label }) {
     if (active) {
@@ -81,7 +65,4 @@ function Sessions
   }
 }
 
-
-
-export default Sessions
-;
+export default Sessions;

@@ -1,4 +1,7 @@
-function Nutriment({type, abbrv, name}) {
+import React from "react";
+
+function Nutriment({type, abbrv, name, index}) {
+
     return (
         <div className="macronutrients">
           <img src={`../assets/${type}-icon.svg`} className="macronutrients__img" alt="nutri-img"/>

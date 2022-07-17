@@ -1,24 +1,21 @@
-const axios = require('axios').default;
-
-// All users endpoint
-export const getUser = async (id) => {
-  return axios.get("http://localhost:3000/user/" + id)
-  
+export const getUserById = async (id) => {
+  const res = await fetch(`http://localhost:3000/user/${id}/`)
+  return await res.json();
 };
 
-// // Second endpoint : Main User activity
+// Second endpoint : Main User - Activity
 export const getUserActivityById = async (id) => {
-  return axios.get(`http://localhost:3000/user/${id}/activity/`)
-  
+  const res = await fetch(`http://localhost:3000/user/${id}/activity/`)
+  return await res.json();
 };
-// export const getUserActivityById = async () => {
-//   return axios.get("http://localhost:3000/user/:id/activity");
-// };
-// // Third endpoint : Main User average sessions
-// export const getUserPerformancebyId = async () => {
-//   return axios.get("http://localhost:3000/user/:id/performance");
-// };
-// // Third endpoint : Main User score
-// export const getUserScoreById = async () => {
-//   return axios.get("http://localhost:3000/user/:id/average-sessions");
-// };
+
+// Third endpoint : Main User - Performance
+export const getUserPerformancebyId = async (id) => {
+   const res = await fetch(`http://localhost:3000/user/${id}/performance/`);
+   return await res.json();
+};
+// Third endpoint : Main User - Score
+export const getUserScoreById = async (id) => {
+   const res = await fetch(`http://localhost:3000/user/${id}/average-sessions/`);
+   return await res.json();
+};
